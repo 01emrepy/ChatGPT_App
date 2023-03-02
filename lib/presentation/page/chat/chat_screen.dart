@@ -1,8 +1,8 @@
 import 'package:chatgpt/infrastructure/provider/completion_provider.dart';
 import 'package:chatgpt/infrastructure/provider/provider_registration.dart';
-import 'package:chatgpt/ui/common_appbar.dart';
-import 'package:chatgpt/ui/rounded_field.dart';
-import 'package:chatgpt/ui/text.dart';
+import 'package:chatgpt/presentation/common_widget/custom_appbar.dart';
+import 'package:chatgpt/presentation/common_widget/rounded_field.dart';
+import 'package:chatgpt/presentation/common_widget/custom_text.dart';
 import 'package:chatgpt/ui/widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

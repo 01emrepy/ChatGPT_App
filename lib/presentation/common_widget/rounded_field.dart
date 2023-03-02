@@ -1,7 +1,7 @@
 import 'package:chatgpt/infrastructure/completion_response_model.dart';
 import 'package:chatgpt/infrastructure/network.dart';
 import 'package:chatgpt/infrastructure/provider/provider_registration.dart';
-import 'package:chatgpt/ui/image_constant.dart';
+import 'package:chatgpt/presentation/common_widget/image_constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

@@ -1,6 +1,6 @@
-import 'package:chatgpt/infrastructure/common/route_constant.dart';
-import 'package:chatgpt/ui/image_constant.dart';
-import 'package:chatgpt/ui/text.dart';
+import 'package:chatgpt/presentation/common_widget/route_constant.dart';
+import 'package:chatgpt/presentation/common_widget/image_constant.dart';
+import 'package:chatgpt/presentation/common_widget/custom_text.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {

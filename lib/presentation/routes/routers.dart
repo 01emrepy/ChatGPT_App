@@ -1,6 +1,6 @@
-import 'package:chatgpt/infrastructure/common/route_constant.dart';
-import 'package:chatgpt/ui/chat_screen.dart';
-import 'package:chatgpt/ui/splash_screen.dart';
+import 'package:chatgpt/presentation/common_widget/route_constant.dart';
+import 'package:chatgpt/presentation/page/chat/chat_screen.dart';
+import 'package:chatgpt/presentation/page/landing/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 class Routers {
@@ -14,6 +14,7 @@ class Routers {
         return MaterialPageRoute(
           builder: (context) => const SplashScreen(),
         );
+
       default:
         return MaterialPageRoute(builder: (context) => Container());
     }

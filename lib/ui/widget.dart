@@ -1,5 +1,5 @@
-import 'package:chatgpt/ui/image_constant.dart';
-import 'package:chatgpt/ui/text.dart';
+import 'package:chatgpt/presentation/common_widget/image_constant.dart';
+import 'package:chatgpt/presentation/common_widget/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
