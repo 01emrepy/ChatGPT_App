@@ -16,37 +16,13 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$ChatgptTextState {
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-  }) =>
+  bool get loading => throw _privateConstructorUsedError;
+  bool get error => throw _privateConstructorUsedError;
+  TextCompletionModel get textCompletionModel =>
       throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    required TResult orElse(),
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-  }) =>
-      throw _privateConstructorUsedError;
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    required TResult orElse(),
-  }) =>
+
+  @JsonKey(ignore: true)
+  $ChatgptTextStateCopyWith<ChatgptTextState> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -55,6 +31,9 @@ abstract class $ChatgptTextStateCopyWith<$Res> {
   factory $ChatgptTextStateCopyWith(
           ChatgptTextState value, $Res Function(ChatgptTextState) then) =
       _$ChatgptTextStateCopyWithImpl<$Res, ChatgptTextState>;
+  @useResult
+  $Res call(
+      {bool loading, bool error, TextCompletionModel textCompletionModel});
 }
 
 /// @nodoc
@@ -66,99 +45,132 @@ class _$ChatgptTextStateCopyWithImpl<$Res, $Val extends ChatgptTextState>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? loading = null,
+    Object? error = null,
+    Object? textCompletionModel = null,
+  }) {
+    return _then(_value.copyWith(
+      loading: null == loading
+          ? _value.loading
+          : loading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      error: null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as bool,
+      textCompletionModel: null == textCompletionModel
+          ? _value.textCompletionModel
+          : textCompletionModel // ignore: cast_nullable_to_non_nullable
+              as TextCompletionModel,
+    ) as $Val);
+  }
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+abstract class _$$_ChatgptTextStateCopyWith<$Res>
+    implements $ChatgptTextStateCopyWith<$Res> {
+  factory _$$_ChatgptTextStateCopyWith(
+          _$_ChatgptTextState value, $Res Function(_$_ChatgptTextState) then) =
+      __$$_ChatgptTextStateCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {bool loading, bool error, TextCompletionModel textCompletionModel});
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$ChatgptTextStateCopyWithImpl<$Res, _$_Initial>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+class __$$_ChatgptTextStateCopyWithImpl<$Res>
+    extends _$ChatgptTextStateCopyWithImpl<$Res, _$_ChatgptTextState>
+    implements _$$_ChatgptTextStateCopyWith<$Res> {
+  __$$_ChatgptTextStateCopyWithImpl(
+      _$_ChatgptTextState _value, $Res Function(_$_ChatgptTextState) _then)
       : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? loading = null,
+    Object? error = null,
+    Object? textCompletionModel = null,
+  }) {
+    return _then(_$_ChatgptTextState(
+      loading: null == loading
+          ? _value.loading
+          : loading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      error: null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as bool,
+      textCompletionModel: null == textCompletionModel
+          ? _value.textCompletionModel
+          : textCompletionModel // ignore: cast_nullable_to_non_nullable
+              as TextCompletionModel,
+    ));
+  }
 }
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial();
+class _$_ChatgptTextState implements _ChatgptTextState {
+  const _$_ChatgptTextState(
+      {required this.loading,
+      required this.error,
+      required this.textCompletionModel});
+
+  @override
+  final bool loading;
+  @override
+  final bool error;
+  @override
+  final TextCompletionModel textCompletionModel;
 
   @override
   String toString() {
-    return 'ChatgptTextState.initial()';
+    return 'ChatgptTextState(loading: $loading, error: $error, textCompletionModel: $textCompletionModel)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Initial);
+        (other.runtimeType == runtimeType &&
+            other is _$_ChatgptTextState &&
+            (identical(other.loading, loading) || other.loading == loading) &&
+            (identical(other.error, error) || other.error == error) &&
+            (identical(other.textCompletionModel, textCompletionModel) ||
+                other.textCompletionModel == textCompletionModel));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
+  int get hashCode =>
+      Object.hash(runtimeType, loading, error, textCompletionModel);
 
+  @JsonKey(ignore: true)
   @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-  }) {
-    return initial();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-  }) {
-    return initial?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    required TResult orElse(),
-  }) {
-    if (initial != null) {
-      return initial();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-  }) {
-    return initial(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-  }) {
-    return initial?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    required TResult orElse(),
-  }) {
-    if (initial != null) {
-      return initial(this);
-    }
-    return orElse();
-  }
+  @pragma('vm:prefer-inline')
+  _$$_ChatgptTextStateCopyWith<_$_ChatgptTextState> get copyWith =>
+      __$$_ChatgptTextStateCopyWithImpl<_$_ChatgptTextState>(this, _$identity);
 }
 
-abstract class _Initial implements ChatgptTextState {
-  const factory _Initial() = _$_Initial;
+abstract class _ChatgptTextState implements ChatgptTextState {
+  const factory _ChatgptTextState(
+          {required final bool loading,
+          required final bool error,
+          required final TextCompletionModel textCompletionModel}) =
+      _$_ChatgptTextState;
+
+  @override
+  bool get loading;
+  @override
+  bool get error;
+  @override
+  TextCompletionModel get textCompletionModel;
+  @override
+  @JsonKey(ignore: true)
+  _$$_ChatgptTextStateCopyWith<_$_ChatgptTextState> get copyWith =>
+      throw _privateConstructorUsedError;
 }
